@@ -16,7 +16,7 @@ CHANGES
 BUILD
 =====
 
-I used Pelles C, not sure of anything else.
+Use Pelles C. (Not sure of anything else.)
 
 1. Compile
 
@@ -71,4 +71,4 @@ DEPLOY
 RUN
 ===
 
-Put a shortcut to it under Programs/Startup, as usual.
+Just run the .exe, but preferably put a shortcut under Programs/Startup (as usual).
