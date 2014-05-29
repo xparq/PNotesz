@@ -19,12 +19,18 @@ BUILD
 
 Use Pelles C. (Not sure of anything else.)
 
+Setup:
+
+1. Create new "Win32 .EXE" project. Nothing fancy, leave everything default.
+   (There's an example Pelles project file in here, too.)
+
+2. Add all the sources (.h, .c, .rc) to the project.
+
 Compile:
 
-	* Create new Win32 .EXE project. Nothing fancy, leave everything the default.
-	* Add all the sources (.h, .c, .rc) to the project.
-	* (Make sure windowsx.h is there in your SDK.)
-	* Add the pnglib & hunspell dirs to the include pathlist.
+- Includes:
+
+	* Add the pnglib & hunspell dirs to the include path.
 
 Link:
 
@@ -40,7 +46,7 @@ Link:
 
 	* output/*.res
 
-Linker command line that seems to work for me: 
+- Linker command line that worked for me: 
 
 	polink.exe -out:result/pnotesz.exe output/*.obj output/*.res -subsystem:windows -machine:x86 ^
 		-libpath:V:/lang/C/pellesc/Lib/Win ^
