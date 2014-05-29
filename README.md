@@ -2,7 +2,7 @@ ABOUT
 =====
 
 This is Andrey Gruber's nice, but obsoleted [PNote](http://pnotes.sourceforge.net/) 9.3.0 Win32 C codebase,
-with some notes (and later possibly slight modifications) added, making it easy 
+with some notes (and slight modifications) added, making it easy 
 to access for tinkeres. (Andrey now develops a [.NET version](https://sourceforge.net/projects/pnotes/files/PNotes.NET/) of the original
 program, check that out, too!)
 
