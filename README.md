@@ -19,16 +19,16 @@ BUILD
 
 Use Pelles C. (Not sure of anything else.)
 
-- Compile
+Compile:
 
 	* Create new Win32 .EXE project. Nothing fancy, leave everything the default.
 	* Add all the sources (.h, .c, .rc) to the project.
 	* (Make sure windowsx.h is there in your SDK.)
 	* Add the pnglib & hunspell dirs to the include pathlist.
 
-- Link
+Link:
 
-Dependencies:
+- Libs:
 
 	* sapi.lib (I just downloaded & added it to ext/)
 	* Add the pnglib (both?!) & hunspell libs.
@@ -36,9 +36,9 @@ Dependencies:
 	  shlwapi.lib shell32.lib version.lib winmm.lib ole32.lib uuid.lib msimg32.lib wininet.lib 
 	  olepro32.lib crypt32.lib ws2_32.lib
 
-Resources:
+- Resources:
 
-	output/*.res
+	* output/*.res
 
 Linker command line that seems to work for me: 
 
@@ -53,19 +53,19 @@ DEPLOY
 
 1.  Put these next to the .exe:
 
-	pnotes.resources	[icons etc.]
-	groups.images
-	smilies.images
-	hunspell.dll
+	* pnotes.resources	[icons etc.]
+	* groups.images
+	* smilies.images
+	* hunspell.dll
 
 2.  Make sure the dir where the .exe is, is writable.
     It'll nicely create the dirs it would need/use.
 
 3.  Populate the 
 
-	dictionaries	[OPTIONAL]
-	lang	[OPTIONAL]
-	fonts
+	* dictionaries	[OPTIONAL]
+	* lang	[OPTIONAL]
+	* fonts
 
     dirs with the stuff found the binary release.
 
