@@ -10,7 +10,7 @@ program, check that out, too!)
 CHANGES
 =======
 
-* #include <tom.h> -> #include <TOM.h>, so you can compile on a case-sensitive filesystem.
+* #include \<tom.h> -> #include \<TOM.h>, so you can compile on a case-sensitive filesystem.
 
 
 BUILD
