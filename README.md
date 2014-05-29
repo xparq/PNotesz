@@ -19,14 +19,14 @@ BUILD
 
 Use Pelles C. (Not sure of anything else.)
 
-1. Compile
+- Compile
 
 	* Create new Win32 .EXE project. Nothing fancy, leave everything the default.
 	* Add all the sources (.h, .c, .rc) to the project.
 	* (Make sure windowsx.h is there in your SDK.)
 	* Add the pnglib & hunspell dirs to the include pathlist.
 
-2. Link
+- Link
 
 Dependencies:
 
