@@ -10,7 +10,7 @@ program, check that out, too!)
 CHANGES
 =======
 
-* Renamed the .exe (and the repo) to avoid confusion about subtle changes.
+* Renamed the .exe (and the repo) to avoid confusion about (possible, subtle) differences from the original.
 * #include \<tom.h> -> #include \<TOM.h>, so you can compile on a case-sensitive filesystem.
 
 
