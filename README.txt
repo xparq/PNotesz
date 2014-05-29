@@ -1,17 +1,17 @@
 ABOUT
 =====
 
-This is Andrey Gruber's nice, but obsoleted [PNote](http://pnotes.sourceforge.net/) 9.3.0 Win32 C codebase,
-with some notes (and slight modifications) added, making it easy 
-to access for tinkeres. (Andrey now develops a [.NET version](https://sourceforge.net/projects/pnotes/files/PNotes.NET/) of the original
-program, check that out, too!)
+This is Andrey Gruber's nice, but obsoleted PNote (http://pnotes.sourceforge.net/) 
+9.3.0 Win32 C codebase, with some notes (and slight modifications) added, making 
+it easy to access for tinkeres. (Andrey now develops a .NET version (https://sourceforge.net/projects/pnotes/files/PNotes.NET/) of the original program, 
+check that out, too!)
 
 
 CHANGES
 =======
 
 * Renamed the .exe (and the repo) to avoid confusion about (possible, subtle) differences from the original.
-* #include \<tom.h> -> #include \<TOM.h>, so you can compile on a case-sensitive filesystem.
+* #include <tom.h> -> #include <TOM.h>, so you can compile on a case-sensitive filesystem.
 
 
 BUILD
@@ -57,17 +57,17 @@ Link:
 DEPLOY
 ======
 
-1.  Put these next to the .exe:
+1. Put these next to the .exe:
 
 	* pnotes.resources	[icons etc.]
 	* groups.images
 	* smilies.images
 	* hunspell.dll
 
-2.  Make sure the dir where the .exe is, is writable.
+2. Make sure the dir where the .exe is, is writable.
     It'll nicely create the dirs it would need/use.
 
-3.  Populate the 
+3. Populate the 
 
 	* dictionaries	[OPTIONAL]
 	* lang	[OPTIONAL]
