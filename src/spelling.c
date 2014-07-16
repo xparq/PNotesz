@@ -22,7 +22,7 @@
 #include <richedit.h>
 #include <richole.h>
 #include <hunspell.h>
-#include <TOM.h>
+#include <tom.h>
 //#include <guiddef.h>
 
 #include "shared.h"

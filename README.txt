@@ -3,25 +3,25 @@ ABOUT
 
 This is Andrey Gruber's nice, but obsoleted PNote (http://pnotes.sourceforge.net/) 
 9.3.0 Win32 C codebase, with some notes (and slight modifications) added, making 
-it easy to access for tinkeres. (Andrey now develops a .NET version (https://sourceforge.net/projects/pnotes/files/PNotes.NET/) 
-check that out, too!)
+it easy to access for tinkeres. (Andrey now develops a .NET version (https://sourceforge.net/projects/pnotes/files/PNotes.NET/),
+check it out!)
 
 
 CHANGES
 =======
 
 * Renamed the .exe (and the repo) to avoid confusion about (possible, subtle) differences from the original.
-* #include <tom.h> -> #include <TOM.h>, so you can compile on a case-sensitive filesystem.
+* Renamed TOM.h to tom.h, so you can build on case-sensitive filesystems.
 
 
 BUILD
 =====
 
-Use Pelles C. (Not sure of anything else.)
+Use Pelles C. (Not sure about how anything else would work.)
 
 Setup:
 
-1. Create new "Win32 .EXE" project. Nothing fancy, leave everything default.
+1. Create new "Win32 .EXE" project. Leave everything default.
    (There's an example Pelles project file in here, too.)
 
 2. Add all the sources (.h, .c, .rc) to the project.
@@ -37,7 +37,7 @@ Link:
 - Libs:
 
 	* sapi.lib (I just downloaded & added it to ext/)
-	* Add the pnglib (both?!) & hunspell libs.
+	* pnglib (both?!) & hunspell libs
 	* kernel32.lib user32.lib gdi32.lib comctl32.lib comdlg32.lib advapi32.lib delayimp.lib 
 	  shlwapi.lib shell32.lib version.lib winmm.lib ole32.lib uuid.lib msimg32.lib wininet.lib 
 	  olepro32.lib crypt32.lib ws2_32.lib
@@ -59,13 +59,13 @@ DEPLOY
 
 1. Put these next to the .exe:
 
-	* pnotes.resources	[icons etc.]
+	* pnotes.resources (icons etc.)
 	* groups.images
 	* smilies.images
 	* hunspell.dll
 
-2. Make sure the dir where the .exe is, is writable.
-    It'll nicely create the dirs it would need/use.
+2. Make the dir where the .exe is writable.
+    It'll nicely create all the other dirs it would need/use.
 
 3. Populate the 
 
@@ -73,9 +73,10 @@ DEPLOY
 	* lang	[OPTIONAL]
 	* fonts
 
-    dirs with the stuff found the binary release.
+    dirs with the stuff found in the binary release.
 
 RUN
 ===
 
-Just run the .exe, but preferably put a shortcut under Programs/Startup (as usual).
+Just run the .exe, but preferably put a shortcut under Programs/Startup 
+(as an installer would normally do).
